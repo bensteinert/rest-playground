@@ -17,6 +17,12 @@ public class BootMain {
         return "<html><body><a href=\"/profile/users\">Spring Data REST Profile</a></</body></html>";
     }
 
+    @RequestMapping(value = "/alive", method = RequestMethod.GET)
+    @ResponseBody
+    String healthCheck() {
+        return "OK";
+    }
+
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(BootMain.class, args);
