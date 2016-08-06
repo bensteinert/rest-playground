@@ -24,7 +24,7 @@ compileJava {
     options.compilerArgs << '-parameters'
 }
 
-project.version = '0.3.0';
+project.version = '0.3.1';
 
 dependencies {
     compile("org.springframework.boot:spring-boot-devtools")

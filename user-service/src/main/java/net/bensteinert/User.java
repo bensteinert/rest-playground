@@ -13,7 +13,7 @@ import java.util.Objects;
 public class User {
 
     @Id
-    private String id;
+    private String _id;
 
     @Indexed(unique = true)
     private String userName;
@@ -52,8 +52,8 @@ public class User {
     }
 
 
-    public String getId() {
-        return id;
+    public String get_id() {
+        return _id;
     }
 
 
@@ -62,20 +62,20 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return Objects.equals(id, user.id);
+        return Objects.equals(_id, user._id);
     }
 
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(_id);
     }
 
 
     @Override
     public String toString() {
         return "User{" +
-                "id='" + id + '\'' +
+                "_id='" + _id + '\'' +
                 ", userName='" + userName + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
