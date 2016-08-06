@@ -5,6 +5,7 @@ package net.bensteinert;
  */
 public class User {
 
+    private String id;
     private String userName;
     private String firstName;
     private String lastName;
@@ -37,5 +38,10 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+
+    public String getId() {
+        return id;
     }
 }
