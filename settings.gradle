@@ -1,2 +1,3 @@
-include 'user-service'
 rootProject.name = 'rest-playground'
+include 'user-service'
+include 'rest-client'
