@@ -4,7 +4,7 @@ This frontend service connects to a set of middle-tier microservices for operati
 
 Just execute
 
-    ./gradlew build
+    ./gradle build
 
     java -jar ./rest-client-0.2.0.jar --userService.ribbon.listOfServers=localhost:8080,localhost:8090
 
