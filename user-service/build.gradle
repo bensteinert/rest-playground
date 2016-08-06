@@ -24,8 +24,7 @@ compileJava {
     options.compilerArgs << '-parameters'
 }
 
-//project.name ='user-service'
-project.version = '0.2.0';
+project.version = '0.3.0';
 
 dependencies {
     compile("org.springframework.boot:spring-boot-devtools")

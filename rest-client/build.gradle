@@ -21,6 +21,8 @@ apply plugin: 'spring-boot'
 apply plugin: 'boxfuse'
 apply plugin: 'com.github.ben-manes.versions'
 
+project.version = '0.1.0';
+
 dependencies {
     compile("org.springframework.boot:spring-boot-devtools")
     compile("org.springframework.boot:spring-boot-starter-web")
