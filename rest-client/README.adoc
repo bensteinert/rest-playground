@@ -1,19 +1,15 @@
-= user-service
+= rest-client
 
-You need a running mongod on your local machine if you want to run the user-service.
-You also need to change the following Spring-Boot properties, so that the service connects to your Mongo Instance
+This frontend service connects to a set of middle-tier microservices for operations on user objects.
 
-- spring.data.mongodb.host
-- spring.data.mongodb.uri
+Just execute
 
-After that, just execute
+    ./gradlew build
 
-    gradlew build
+    java -jar ./rest-client-0.2.0.jar --userService.ribbon.listOfServers=localhost:8080,localhost:8090
 
-    java -jar ./build/libs/user-service-0.3.1.jar --server.port=8080
+If you previously launched user-service instances on port 8080 and 8090.
 
-localhost:8080/users leads the way to the Spring Data REST world :-)
+Now you are ready to discover and play around! I recommend https://chrome.google.com/webstore/detail/dhc-rest-client/aejoelaoggembcahagimdiliamlcdmfm?utm_source=chrome-ntp-icon[Chrome DHC] for accessing the REST Api!
 
-If you want to launch multiple service instances, e.g. for LoadBalancing, just use the same jar command with a different port.
-
-Now move over to the https://github.com/bensteinert/rest-playground/tree/master/rest-client[rest-client].
+Have fun!
