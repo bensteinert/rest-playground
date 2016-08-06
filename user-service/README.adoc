@@ -8,8 +8,7 @@ You also need to change the following Spring-Boot properties, so that the servic
 
 After that, just execute
 
-    ./gradle build
-
+    gradle build
     java -jar ./build/libs/user-service-0.3.1.jar --server.port=8080
 
 localhost:8080/users leads the way to the Spring Data REST world :-)
