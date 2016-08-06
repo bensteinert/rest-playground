@@ -5,7 +5,7 @@ import org.springframework.hateoas.PagedResources;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(url = "http://localhost:8080")
+@FeignClient("http://userService")
 interface UserService {
 
     @RequestMapping(method = RequestMethod.GET, value = "/users")

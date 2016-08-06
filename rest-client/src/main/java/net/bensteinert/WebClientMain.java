@@ -3,6 +3,7 @@ package net.bensteinert;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.hateoas.config.EnableHypermediaSupport;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @EnableFeignClients
 @EnableHypermediaSupport(type = EnableHypermediaSupport.HypermediaType.HAL)
+@RibbonClient("userService")
 public class WebClientMain {
 
     @RequestMapping(value = "api/alive", method = RequestMethod.GET)
