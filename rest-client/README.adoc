@@ -14,6 +14,7 @@ Now you are ready to discover and play around!
 The REST-Client WebApp runs on http://localhost:8081[localhost:8081] if not specified differently.
 
 Defined endpoints are:
+
 - GET  http://localhost:8081/api/users
 - GET  http://localhost:8081/api/users/{userId}
 - POST http://localhost:8081/api/users (check the required format from one of the previous GET requests)
