@@ -1,6 +1,6 @@
 = rest-client
 
-This frontend service connects to a set of middle-tier microservices for operations on user objects.
+This frontend service connects to a set of middle-tier microservices for operations on user objects. The WebApp makes use of the http://cloud.spring.io/spring-cloud-netflix/[Spring Cloud Netflix package]
 
 Just execute
 
@@ -13,6 +13,13 @@ Now you are ready to discover and play around!
 
 The REST-Client WebApp runs on http://localhost:8081[localhost:8081] if not specified differently.
 
-I recommend https://chrome.google.com/webstore/detail/dhc-rest-client/aejoelaoggembcahagimdiliamlcdmfm?utm_source=chrome-ntp-icon[Chrome DHC] for accessing the REST Api!
+Defined endpoints are:
+- GET  http://localhost:8081/api/users
+- GET  http://localhost:8081/api/users/{userId}
+- POST http://localhost:8081/api/users (check the required format from one of the previous GET requests)
+- PUT  http://localhost:8081/api/users/{userId} (check the required format from one of the previous GET requests)
+- DEL  http://localhost:8081/api/users/{userId}
+
+I recommend https://chrome.google.com/webstore/detail/dhc-rest-client/aejoelaoggembcahagimdiliamlcdmfm[Chrome DHC] for accessing the REST Api!
 
 Have fun!
