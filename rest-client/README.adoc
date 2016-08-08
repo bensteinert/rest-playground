@@ -9,6 +9,10 @@ Just execute
 
 If you previously launched user-service instances on port 8080 and 8090.
 
-Now you are ready to discover and play around! I recommend https://chrome.google.com/webstore/detail/dhc-rest-client/aejoelaoggembcahagimdiliamlcdmfm?utm_source=chrome-ntp-icon[Chrome DHC] for accessing the REST Api!
+Now you are ready to discover and play around! 
+
+The REST-Client WebApp runs on http://localhost:8081[localhost:8081] if not specified differently.
+
+I recommend https://chrome.google.com/webstore/detail/dhc-rest-client/aejoelaoggembcahagimdiliamlcdmfm?utm_source=chrome-ntp-icon[Chrome DHC] for accessing the REST Api!
 
 Have fun!
