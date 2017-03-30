@@ -1,0 +1,20 @@
+app:
+  name: rest-playground-service
+  description: Big playground where everything get's squeezed in
+spring:
+  profiles: aws
+  data:
+    mongodb:
+      host: 172.31.7.194
+      uri: mongodb://172.31.7.194/test
+      repositories:
+        enabled: true
+---
+spring:
+  profiles: local
+  data:
+    mongodb:
+      host: localhost
+      uri: mongodb://localhost/dev
+      repositories:
+        enabled: true
